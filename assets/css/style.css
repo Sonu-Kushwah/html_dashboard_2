@@ -1,0 +1,154 @@
+/*==========================================================================
+1.0 DEFAUL SETTING
+========================================================================== */
+:root {
+  --main-bg: #98352e;
+  --main-color: #98352e;
+  --black: #000;
+  --white: #ffffff;
+}
+
+/* body { background-color: var(--blue); } */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+p {
+  margin-bottom: 0;
+}
+figure {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+/*dashboard css*/
+.layout-container {
+  display: flex;
+}
+aside {
+  /* transition: width 0.3s; */
+}
+.sidebar {
+  position: fixed;
+  width: 270px;
+  background-color: white;
+  box-shadow: 0 0 10px #ccc;
+  height: 100vh;
+  padding: 10px 5px;
+  z-index: 1;
+}
+.sidebar_logo {
+  padding: 10px 0;
+  text-align: center;
+}
+.sidebar_logo img {
+  width: 65%;
+}
+.sidebar ul li a {
+  display: block;
+  padding: 12px;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 5px;
+  display: flex;
+  gap: 12px;
+}
+.sidebar ul li a.active {
+  background-color: var(--main-bg);
+  color: var(--white);
+}
+.navbar {
+  background-color: white;
+  box-shadow: 9px 0 10px #ccc;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+}
+.navbar .logo {
+  display: none;
+}
+.sidebar_toggle_btn {
+  color: var(--black);
+  font-size: 25px;
+}
+.sidebar_toggle_btn:hover {
+  color: var(--black);
+}
+.layout-page {
+  width: 100%;
+  position: relative;
+  left: 270px;
+}
+.layout-container.active .sidebar {
+  width: 0px;
+  left: -30px;
+}
+.layout-container.active .sidebar ul li a {
+  justify-content: center;
+}
+
+.layout-container.active .link-content {
+  display: none;
+}
+.layout-container.active .layout-page {
+  left: 0px;
+}
+.content-wrapper {
+  padding-top: 80px;
+  padding-left: 15px;
+}
+.logo {
+  width: 130px;
+}
+.navLogo {
+  display: none;
+}
+.nav-link:hover {
+  color: var(--black);
+}
+/*mobile view css*/
+.mobile_toggle_btn {
+  color: gray;
+  font-size: 20px;
+}
+/*responsive css*/
+@media (max-width: 991px) {
+  /* .sidebar {
+    display: none;
+  }
+  .layout-page {
+    left: 0;
+  } */
+  .box {
+    width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+}

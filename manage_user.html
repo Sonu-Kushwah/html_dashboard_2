@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Dashboard</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="layout-wrapper">
+      <div class="layout-container" id="sidebar">
+        <aside class="sidebar">
+          <div class="sidebar_logo">
+            <a href="#">
+              <img src="assets/images/logo.png" class="img-fluid" alt="logo" />
+            </a>
+          </div>
+          <ul id="nav-links">
+            <li>
+              <a href="index.html" class="nav-link">
+                <span><i class="fa-solid fa-gauge"></i></span>
+                <div class="link-content">Dashboard</div>
+              </a>
+            </li>
+            <li>
+              <a href="manage_user.html" class="nav-link">
+                <span><i class="fa-solid fa-user"></i></span>
+                <div class="link-content">Manage Users</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span><i class="fa-solid fa-gauge"></i></span>
+                <div class="link-content">Manage Transaction</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span><i class="fa-solid fa-gauge"></i></span>
+                <div class="link-content">Manage Deposit Location</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span><i class="fa-solid fa-gauge"></i></span>
+                <div class="link-content">Manage Items</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span><i class="fa-solid fa-gear"></i></span>
+                <div class="link-content">Settings</div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <div class="layout-page">
+          <nav class="navbar">
+            <div class="container-fluid d-flex justify-content-between">
+              <div class="row box d-flex justify-content-between">
+                <div class="col-6">
+                  <a href="#">
+                    <img
+                      src="assets/images/logo.png"
+                      class="img-fluid logo"
+                      alt="logo"
+                    />
+                  </a>
+                  <div class="nav-btn">
+                    <a href="#" class="sidebar_toggle_btn" id="toggleSidebar">
+                      <i class="fa-solid fa-bars" style="color: #98352e"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                  <div class="nav-btn">
+                    <a href="#" class="sidebar_toggle_btn d-none">
+                      <i class="fa-solid fa-bars"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <!--page layout-->
+          <div class="content-wrapper">
+            <div class="container-fluid">
+              <div class="pageTitle">
+                <h2>Manage Users</h2>
+              </div>
+            </div>
+          </div>
+          <!--page layout end -->
+
+          <footer>
+            <div class="container-fluid">
+              <p class="text-center">© copyright@2023</p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
